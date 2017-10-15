@@ -1,7 +1,7 @@
 
 
 function getIssues() {
-  const repo = 'cpan001/javascript-fetch-lab'
+  const repo = 'cpan001/javascript-fetch-lab-web-082817'
   fetch(`javascript-fetch-lab/issues`,
   { method: "get",
     headers: {Authorization: `token ${getToken()}`}
@@ -21,7 +21,7 @@ function showIssues(json) {
 }
 
 function createIssue() {
-  const repo = 'cpan001/javascript-fetch-lab'
+  const repo = 'cpan001/javascript-fetch-lab-web-082817'
   const fetchLink = `https://api.github.com/repos/${repo}/issues`
   const issueData = {
     title: document.getElementById("title").value,
@@ -42,7 +42,7 @@ function showResults(json) {
 }
 
 function forkRepo() {
-  const repo = 'learn-co-curriculum/javascript-fetch-lab'
+  const repo = 'learn-co-curriculum/javascript-fetch-lab-web-082817'
   //use fetch to fork it!
   fetch(`https://api.github.com/repos/${repo}/forks`, {
     method: "post",
